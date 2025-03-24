@@ -12,4 +12,9 @@
     'images': ['static/description/icon.png'],
     'installable': True,
     'application': True,
+    'assets': {
+    'web.assets_backend': [
+        'custom_eau/static/src/css/eau_style.css',
+    ],
+},
 }
