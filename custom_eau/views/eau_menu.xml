@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <!-- Menüstruktur -->
+  <menuitem id="menu_eau_root"
+            name="eAU-Verwaltung"
+            parent="hr.menu_hr_root"
+            sequence="100"
+            icon="fa-medkit"/>
+
+  <!-- Action: Mitarbeiterliste als Einstieg -->
+  <record id="action_eau_employee" model="ir.actions.act_window">
+    <field name="name">eAU Mitarbeiter</field>
+    <field name="res_model">hr.employee</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <!-- Menüeintrag: Verlinkt Action -->
+  <menuitem id="menu_eau_employee"
+            name="Mitarbeiter"
+            parent="menu_eau_root"
+            action="action_eau_employee"
+            sequence="10"/>
+</odoo>

@@ -8,6 +8,7 @@
     'depends': ['hr'],
     'data': [
         'views/employee_view.xml',
+        'views/eau_menu.xml',
     ],
     'images': ['static/description/icon.png'],
     'installable': True,
